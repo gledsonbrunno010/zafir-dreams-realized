@@ -84,7 +84,7 @@ const HeroSection = () => {
 
           {/* Buttons */}
           <div
-            className="flex flex-col sm:flex-row gap-4 mb-16"
+            className="flex flex-col sm:flex-row gap-4 mb-16 items-center lg:items-start"
             style={{
               opacity: loaded ? 1 : 0,
               transform: loaded ? "translateY(0)" : "translateY(30px)",

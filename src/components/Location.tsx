@@ -47,7 +47,7 @@ const Location = () => {
 
               <div className="gold-line w-full my-8" />
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <a
                   href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20soluções%20da%20Zafir%20Invest"
                   target="_blank"

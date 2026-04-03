@@ -28,7 +28,7 @@ const FooterSection = () => {
               <span className="font-cinzel text-primary text-sm">ZAFIR INVEST</span>
             </div>
             <p className="text-muted-foreground text-sm mb-6">Conquiste o que você merece.</p>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 justify-center sm:justify-start">
               <a
                 href="https://wa.me/5500000000000"
                 target="_blank"
