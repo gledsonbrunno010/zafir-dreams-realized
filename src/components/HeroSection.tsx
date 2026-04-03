@@ -26,7 +26,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container relative z-10 pt-32 pb-20">
-        <div className="max-w-4xl">
+        <div className="max-w-4xl mx-auto lg:mx-0 text-center lg:text-left">
           {/* Animated gold line */}
           <div className="mb-6 overflow-hidden">
             <div
@@ -52,7 +52,7 @@ const HeroSection = () => {
 
           {/* Main title */}
           <h1
-            className="font-display text-[42px] md:text-[56px] lg:text-[72px] font-bold leading-[1.1] mb-8"
+            className="font-display text-[42px] md:text-[56px] lg:text-[72px] font-bold md:font-extrabold leading-[1.1] mb-8"
             style={{
               opacity: loaded ? 1 : 0,
               transform: loaded ? "translateY(0)" : "translateY(30px)",
@@ -84,7 +84,7 @@ const HeroSection = () => {
 
           {/* Buttons */}
           <div
-            className="flex flex-col sm:flex-row gap-4 mb-16"
+            className="flex flex-col sm:flex-row gap-4 mb-16 items-center lg:items-start"
             style={{
               opacity: loaded ? 1 : 0,
               transform: loaded ? "translateY(0)" : "translateY(30px)",

@@ -20,15 +20,15 @@ const FooterSection = () => {
   return (
     <footer style={{ backgroundColor: "#050505" }} className="pt-20 pb-8">
       <div className="container">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 text-center sm:text-left">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-4 justify-center sm:justify-start">
               <img src={logo} alt="Zafir Invest" className="h-10 w-10" loading="lazy" />
               <span className="font-cinzel text-primary text-sm">ZAFIR INVEST</span>
             </div>
             <p className="text-muted-foreground text-sm mb-6">Conquiste o que você merece.</p>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 justify-center sm:justify-start">
               <a
                 href="https://wa.me/5500000000000"
                 target="_blank"

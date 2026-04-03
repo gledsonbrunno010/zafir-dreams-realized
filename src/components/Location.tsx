@@ -15,29 +15,29 @@ const Location = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact info */}
           <RevealSection>
-            <div className="space-y-8">
-              <div className="flex items-start gap-4">
+            <div className="space-y-8 text-center lg:text-left">
+              <div className="flex items-start gap-4 justify-center lg:justify-start">
                 <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-body font-medium text-foreground mb-1">Endereço</p>
                   <p className="text-muted-foreground text-sm">[Insira seu endereço aqui]</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 justify-center lg:justify-start">
                 <Phone className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-body font-medium text-foreground mb-1">WhatsApp</p>
                   <p className="text-muted-foreground text-sm">[Insira seu número aqui]</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 justify-center lg:justify-start">
                 <Mail className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-body font-medium text-foreground mb-1">E-mail</p>
                   <p className="text-muted-foreground text-sm">[Insira seu e-mail aqui]</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 justify-center lg:justify-start">
                 <Clock className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-body font-medium text-foreground mb-1">Horário</p>
@@ -47,7 +47,7 @@ const Location = () => {
 
               <div className="gold-line w-full my-8" />
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <a
                   href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20soluções%20da%20Zafir%20Invest"
                   target="_blank"

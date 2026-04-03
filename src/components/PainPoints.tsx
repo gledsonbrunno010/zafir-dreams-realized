@@ -32,7 +32,7 @@ const PainPoints = () => {
           {/* Left: cards */}
           <div>
             <RevealSection>
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-12">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-center lg:text-left">
                 Você já passou <span className="text-gradient-gold">por isso?</span>
               </h2>
             </RevealSection>
@@ -40,7 +40,7 @@ const PainPoints = () => {
             <div className="space-y-6">
               {painCards.map((card, i) => (
                 <RevealSection key={i} delay={i * 0.15}>
-                  <div className="border-l-2 border-primary/60 pl-6 py-4">
+                  <div className="border-l-2 border-primary/60 pl-6 py-4 text-center lg:text-left">
                     <div className="flex items-center gap-3 mb-3">
                       <card.icon className="w-5 h-5 text-primary flex-shrink-0" />
                       <p className="font-body font-medium text-foreground italic">
