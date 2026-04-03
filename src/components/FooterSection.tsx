@@ -24,7 +24,7 @@ const FooterSection = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4 justify-center sm:justify-start">
-              <img src={logo} alt="Zafir Invest" className="h-10 w-10" loading="lazy" />
+              <img src={logo} alt="Zafir Invest" className="h-14 w-14" loading="lazy" />
               <span className="font-cinzel text-primary text-sm">ZAFIR INVEST</span>
             </div>
             <p className="text-muted-foreground text-sm mb-6">Conquiste o que você merece.</p>
