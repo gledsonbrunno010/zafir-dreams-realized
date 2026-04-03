@@ -15,7 +15,7 @@ const Location = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact info */}
           <RevealSection>
-            <div className="space-y-8">
+            <div className="space-y-8 text-center lg:text-left">
               <div className="flex items-start gap-4">
                 <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <div>
