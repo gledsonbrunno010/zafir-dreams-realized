@@ -5,6 +5,7 @@ import HowItWorks from "@/components/HowItWorks";
 import ProductCards from "@/components/ProductCards";
 import Differentials from "@/components/Differentials";
 import Stats from "@/components/Stats";
+import LegalStrip from "@/components/LegalStrip";
 import FAQ from "@/components/FAQ";
 import Location from "@/components/Location";
 import FinalCTA from "@/components/FinalCTA";
@@ -20,6 +21,7 @@ const Index = () => {
       <ProductCards />
       <Differentials />
       <Stats />
+      <LegalStrip />
       <FAQ />
       <Location />
       <FinalCTA />
