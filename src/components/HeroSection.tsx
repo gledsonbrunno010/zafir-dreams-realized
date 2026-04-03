@@ -1,31 +1,82 @@
 import { useParallax } from "@/hooks/useAnimations";
 import { ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
+import BlurText from "./BlurText";
+
+const SLIDES = [
+  {
+    bg: "/bg-hero-1.png",
+    position: "center center",
+    headline1: "Você não quer um financiamento.",
+    headlineGold: "Você quer a conquista."
+  },
+  {
+    bg: "/bg-hero-2.png",
+    position: "center 70%",
+    headline1: "Você merece essa grande",
+    headlineGold: "Conquista"
+  },
+  {
+    bg: "/bg-hero-3.png",
+    position: "center 80%",
+    headline1: "Trabalhar em um caminhão que não é seu",
+    headlineGold: '"Nunca Mais"'
+  },
+  {
+    bg: "/bg-hero-4.png",
+    position: "center center",
+    headline1: "No Agro, um material de qualidade faz",
+    headlineGold: "Toda a Diferença"
+  },
+  {
+    bg: "/bg-hero-5.png",
+    position: "center 30%",
+    headline1: "Invista no Brasil, mesmo morando em outros países,",
+    headlineGold: "Conquiste sua Liberdade"
+  }
+];
 
 const HeroSection = () => {
   const parallaxOffset = useParallax(0.5);
   const [loaded, setLoaded] = useState(false);
+  const [currentBg, setCurrentBg] = useState(0);
 
   useEffect(() => {
     setLoaded(true);
+    
+    // Transição "combinar" a cada 6 segundos
+    const interval = setInterval(() => {
+      setCurrentBg((prev) => (prev + 1) % SLIDES.length);
+    }, 6000);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Parallax BG */}
+    <section id="inicio" className="relative min-h-screen flex items-center bg-background overflow-hidden">
+      {/* Parallax BG - Posicionado à direita no desktop */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 lg:left-auto lg:right-0 lg:w-[65%]"
         style={{ transform: `translateY(${parallaxOffset}px)` }}
       >
-        <img
-          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920"
-          alt=""
-          className="w-full h-[120%] object-cover"
-        />
-        <div className="absolute inset-0" style={{ backgroundColor: "rgba(10,10,10,0.72)" }} />
+        {SLIDES.map((slide, index) => (
+          <img
+            key={slide.bg}
+            src={slide.bg}
+            alt=""
+            className="absolute inset-0 w-full h-[100%] lg:h-[120%] object-cover transition-opacity duration-[1500ms] ease-in-out"
+            style={{ 
+              opacity: currentBg === index ? 1 : 0,
+              objectPosition: slide.position
+            }}
+          />
+        ))}
+        {/* Gradiente Escuro de Transição - Esquerda para a Direita / Baixo para Cima */}
+        <div className="absolute inset-0 z-10 bg-gradient-to-t lg:bg-gradient-to-r from-background via-background/80 lg:via-background/50 to-transparent lg:to-transparent" />
+        <div className="absolute inset-0 z-10 bg-black/20" /> {/* Escurecimento leve geral para contraste em partes claras das imagens */}
       </div>
 
-      <div className="container relative z-10 pt-32 pb-20">
+      <div className="container relative z-20 pt-32 pb-20">
         <div className="max-w-4xl mx-auto lg:mx-0 text-center lg:text-left">
           {/* Animated gold line */}
           <div className="mb-6 overflow-hidden">
@@ -52,31 +103,47 @@ const HeroSection = () => {
 
           {/* Main title */}
           <h1
-            className="font-display text-[42px] md:text-[56px] lg:text-[72px] font-bold md:font-extrabold leading-[1.1] mb-8"
+            className="font-display text-[42px] md:text-[56px] lg:text-[88px] xl:text-[100px] font-bold md:font-extrabold leading-[0.95] tracking-tight mb-8"
             style={{
               opacity: loaded ? 1 : 0,
               transform: loaded ? "translateY(0)" : "translateY(30px)",
               transition: "all 0.7s ease-out 0.7s",
+              minHeight: "130px" // Previne pulinhos enquanto a fonte carrega
             }}
           >
-            Você não quer um financiamento.
+            <BlurText 
+              key={`b1-${currentBg}`}
+              text={SLIDES[currentBg].headline1}
+              delay={35}
+              animateBy="words"
+              direction="bottom" 
+              className="text-foreground"
+            />
             <br />
-            <span className="text-gradient-gold">Você quer a conquista.</span>
+            <BlurText 
+              key={`b2-${currentBg}`}
+              text={SLIDES[currentBg].headlineGold}
+              delay={35}
+              animateBy="words"
+              direction="bottom" 
+              className="block"
+              segmentClassName="text-gradient-gold"
+            />
           </h1>
 
           {/* Subtitle */}
           <div
-            className="max-w-2xl mb-12"
+            className="max-w-3xl mb-12"
             style={{
               opacity: loaded ? 1 : 0,
               transform: loaded ? "translateY(0)" : "translateY(30px)",
               transition: "all 0.7s ease-out 0.9s",
             }}
           >
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed lg:leading-normal">
               Enquanto o banco te ignorava, nós criamos um caminho.
               <br />
-              Sem aprovação de crédito. Sem juros abusivos. Sem desculpas.
+              Sem Complicações Excessivas. Sem juros abusivos. Sem desculpas.
               <br />
               A Zafir Invest te entrega a chave do que você já merece.
             </p>

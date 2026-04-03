@@ -29,10 +29,10 @@ const Header = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container flex items-center justify-between h-20">
-        <a href="#inicio" className="flex items-center gap-3">
-          <img src={logo} alt="Zafir Invest" className="h-14 w-14" />
-          <span className="font-cinzel text-primary text-sm tracking-[0.15em]">
+      <div className="container flex items-center justify-between h-24 md:h-28">
+        <a href="#inicio" className="flex items-center gap-1.5">
+          <img src={logo} alt="Zafir Invest" className="h-20 w-20 md:h-24 md:w-24 object-contain" />
+          <span className="font-cinzel text-primary text-sm md:text-base tracking-[0.10em] whitespace-nowrap">
             ZAFIR INVEST
           </span>
         </a>
