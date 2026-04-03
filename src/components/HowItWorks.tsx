@@ -1,57 +1,59 @@
+import RevealSection from "./RevealSection";
+
 const steps = [
   {
     number: "01",
-    title: "Entre em Contato",
-    description: "Fale conosco pelo WhatsApp ou formulário. Vamos entender o que você deseja conquistar.",
+    title: "VOCÊ ESCOLHE O BEM",
+    text: "Nos diz o que você quer conquistar. Casa, carro, moto ou caminhão — nós mapeamos a melhor estratégia pra você chegar lá.",
   },
   {
     number: "02",
-    title: "Escolha Seu Plano",
-    description: "Apresentamos as melhores opções para o seu perfil — parcelas que cabem no seu bolso.",
+    title: "NÓS ESTRUTURAMOS O PLANO",
+    text: "Sem burocracia de banco. Sem análise de crédito humilhante. Criamos um plano personalizado, transparente e viável para o seu momento financeiro atual.",
   },
   {
     number: "03",
-    title: "Assine o Contrato",
-    description: "Tudo transparente e seguro. Contrato claro, sem letras miúdas, sem surpresas.",
-  },
-  {
-    number: "04",
-    title: "Conquiste Seu Bem",
-    description: "Receba a carta contemplada e realize o sonho da casa, carro, moto ou caminhão.",
+    title: "VOCÊ CONQUISTA",
+    text: "Acompanhamento próximo do início ao fim. Quando a chave estiver na sua mão, nosso trabalho estará completo.",
   },
 ];
 
 const HowItWorks = () => {
   return (
-    <section id="como-funciona" className="py-24">
+    <section id="como-funciona" className="section-padding" style={{ backgroundColor: "#0D0D0D" }}>
       <div className="container">
-        <div className="text-center mb-16">
-          <span className="text-primary font-semibold text-sm tracking-widest uppercase">Passo a Passo</span>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mt-3">
-            Como <span className="text-gradient-gold">funciona?</span>
+        <RevealSection className="text-center mb-20">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+            Simples assim.
           </h2>
-          <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-            Um processo simples e transparente em apenas 4 etapas
+          <p className="text-muted-foreground text-lg">
+            Em 3 passos, você está mais perto do seu bem.
           </p>
-        </div>
+        </RevealSection>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
-          <div className="hidden lg:block absolute top-16 left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
-          
+        <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, i) => (
-            <div
-              key={step.number}
-              className="relative text-center animate-fade-up"
-              style={{ animationDelay: `${i * 0.15}s` }}
-            >
-              <div className="relative inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-gold text-primary-foreground font-display text-2xl font-bold mb-6 shadow-gold">
-                {step.number}
+            <RevealSection key={step.number} delay={i * 0.2}>
+              <div className="glass-card p-10 h-full">
+                <span className="font-numbers text-6xl text-gradient-gold block mb-6">
+                  {step.number}
+                </span>
+                <h3 className="font-cinzel text-sm text-foreground mb-4">
+                  {step.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {step.text}
+                </p>
               </div>
-              <h3 className="font-display text-xl font-bold mb-3">{step.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
-            </div>
+            </RevealSection>
           ))}
         </div>
+
+        <RevealSection delay={0.4} className="text-center mt-16">
+          <a href="#contato" className="btn-primary inline-block">
+            QUERO COMEÇAR AGORA
+          </a>
+        </RevealSection>
       </div>
     </section>
   );
