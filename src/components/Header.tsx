@@ -31,7 +31,7 @@ const Header = () => {
     >
       <div className="container flex items-center justify-between h-20">
         <a href="#inicio" className="flex items-center gap-3">
-          <img src={logo} alt="Zafir Invest" className="h-10 w-10" />
+          <img src={logo} alt="Zafir Invest" className="h-14 w-14" />
           <span className="font-cinzel text-primary text-sm tracking-[0.15em]">
             ZAFIR INVEST
           </span>
