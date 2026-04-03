@@ -21,6 +21,7 @@ const Index = () => {
       <ProductCards />
       <Differentials />
       <Stats />
+      <LegalStrip />
       <FAQ />
       <Location />
       <FinalCTA />
