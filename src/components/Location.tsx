@@ -16,7 +16,7 @@ const Location = () => {
           {/* Contact info */}
           <RevealSection>
             <div className="space-y-8 text-center lg:text-left">
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 justify-center lg:justify-start">
                 <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-body font-medium text-foreground mb-1">Endereço</p>
