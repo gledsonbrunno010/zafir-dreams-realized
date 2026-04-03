@@ -32,9 +32,9 @@ Thumbs.db
 *.sln
 *.sw?
 
-# Lock files (keep only one - using bun.lock)
+# Lock files (usando package-lock.json para compatibilidade no Cloudflare)
 bun.lockb
-package-lock.json
+bun.lock
 
 # OS
 .DS_Store
