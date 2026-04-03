@@ -23,7 +23,7 @@ const FooterSection = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 text-center sm:text-left">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-4 justify-center sm:justify-start">
               <img src={logo} alt="Zafir Invest" className="h-10 w-10" loading="lazy" />
               <span className="font-cinzel text-primary text-sm">ZAFIR INVEST</span>
             </div>
