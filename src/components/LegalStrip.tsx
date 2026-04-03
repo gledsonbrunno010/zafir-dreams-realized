@@ -12,7 +12,7 @@ const LegalStrip = () => {
               <img
                 src={bacenLogo}
                 alt="Banco Central do Brasil"
-                className="h-20 md:h-24 w-auto"
+                className="h-28 md:h-36 w-auto"
               />
             </div>
 
