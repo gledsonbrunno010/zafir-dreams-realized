@@ -20,7 +20,7 @@ const FooterSection = () => {
   return (
     <footer style={{ backgroundColor: "#050505" }} className="pt-20 pb-8">
       <div className="container">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 text-center sm:text-left">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
