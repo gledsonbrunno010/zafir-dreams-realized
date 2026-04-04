@@ -4,26 +4,30 @@ const products = [
   {
     image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800",
     tag: "IMÓVEIS",
+    messageAsset: "imóvel",
     title: "Sua casa. Do jeito que você imaginou.",
     text: "Não um apartamento qualquer. A casa que você prometeu pra sua família. Com estrutura, com segurança, com orgulho.",
   },
   {
-    image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800",
+    image: "/byd-seal.png",
     tag: "VEÍCULOS",
+    messageAsset: "veículo",
     title: "O carro que você merece dirigir.",
     text: "Não é sobre transporte. É sobre não depender de ninguém, chegar onde quiser e sentir o que é conquistar com as próprias mãos.",
   },
   {
     image: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800",
     tag: "MOTOS",
+    messageAsset: "moto",
     title: "Liberdade com as duas rodas certas.",
     text: "Para quem quer mobilidade, agilidade e a sensação de que o caminho pertence a você.",
   },
   {
     image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800",
     tag: "PESADOS",
+    messageAsset: "pesados",
     title: "Seu próprio negócio sobre rodas.",
-    text: "O Volvo FH540 não é só um caminhão. É o início da sua empresa. Sua independência no asfalto. Seu patrimônio em movimento.",
+    text: "Caminhões das marcas Volvo, Scania, Iveco, Mercedes-Benz e Volkswagen. Sua independência no asfalto. Seu patrimônio em movimento.",
   },
 ];
 
@@ -62,8 +66,13 @@ const ProductCards = () => {
                   <p className="text-muted-foreground text-sm leading-relaxed mb-6 max-w-md">
                     {product.text}
                   </p>
-                  <a href="#contato" className="btn-primary inline-block w-fit text-xs py-3 px-6">
-                    QUERO ESTE BEM
+                  <a 
+                    href={`https://wa.me/5561982293664?text=${encodeURIComponent(`Olá. Estive no site da Zafir Invest e gostaria de uma simulação sobre ${product.messageAsset}.`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary inline-block w-fit text-xs py-3 px-6"
+                  >
+                    PEDIR UMA SIMULAÇÃO
                   </a>
                 </div>
               </div>
