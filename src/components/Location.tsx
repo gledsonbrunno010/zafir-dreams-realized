@@ -27,7 +27,9 @@ const Location = () => {
                 <Phone className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-body font-medium text-foreground mb-1">WhatsApp</p>
-                  <p className="text-muted-foreground text-sm">+55 61 98229-3664</p>
+                  <a href="https://wa.me/5561982293664?text=Olá.%20Gostaria%20de%20mais%20informações%20sobre%20o%20trabalho%20da%20Zafir%20Invest" target="_blank" rel="noopener noreferrer" className="block text-muted-foreground text-sm hover:text-primary transition-colors mb-1">+55 61 98229-3664</a>
+                  <a href="https://wa.me/5561991922993?text=Olá.%20Gostaria%20de%20mais%20informações%20sobre%20o%20trabalho%20da%20Zafir%20Invest" target="_blank" rel="noopener noreferrer" className="block text-muted-foreground text-sm hover:text-primary transition-colors mb-1">+55 61 99192-2993</a>
+                  <a href="https://wa.me/5561994583188?text=Olá.%20Gostaria%20de%20mais%20informações%20sobre%20o%20trabalho%20da%20Zafir%20Invest" target="_blank" rel="noopener noreferrer" className="block text-muted-foreground text-sm hover:text-primary transition-colors">+55 61 99458-3188</a>
                 </div>
               </div>
               <div className="flex items-start gap-4 justify-center lg:justify-start">
@@ -83,7 +85,7 @@ const Location = () => {
           <RevealSection delay={0.2}>
             <div className="border border-primary/20 h-[400px] lg:h-full min-h-[400px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1976540804417!2d-46.6522202!3d-23.5505199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjkiUyA0NsKwMzknMDguMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                src="https://maps.google.com/maps?q=St.%20M%20Norte%20QNM%2034%20%C3%81rea%20especial%2001%20-%20Taguatinga,%20Bras%C3%ADlia%20-%20DF,%2072145-450&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: "invert(90%) hue-rotate(180deg)" }}
