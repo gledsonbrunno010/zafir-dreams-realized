@@ -103,7 +103,7 @@ const HeroSection = () => {
 
           {/* Main title */}
           <h1
-            className="font-display text-[42px] md:text-[56px] lg:text-[88px] xl:text-[100px] font-bold md:font-extrabold leading-[0.95] tracking-tight mb-8"
+            className="font-display text-[50px] md:text-[56px] lg:text-[88px] xl:text-[100px] font-bold md:font-extrabold leading-[0.95] tracking-tight mb-8"
             style={{
               opacity: loaded ? 1 : 0,
               transform: loaded ? "translateY(0)" : "translateY(30px)",
