@@ -201,6 +201,12 @@
     border-color: hsl(45 90% 55% / 0.4);
   }
 
+  @media (max-width: 767px) {
+    .glass-card-yellow-border {
+      border-color: hsl(45 90% 55% / 0.6) !important;
+    }
+  }
+
   .gold-line {
     height: 1px;
     background: linear-gradient(90deg, transparent, hsl(45 90% 55% / 0.6), transparent);

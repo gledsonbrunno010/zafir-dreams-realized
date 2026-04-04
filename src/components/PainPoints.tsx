@@ -32,7 +32,7 @@ const PainPoints = () => {
           {/* Left: cards */}
           <div>
             <RevealSection>
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-center lg:text-left">
+              <h2 className="font-display text-[40px] md:text-4xl lg:text-5xl font-bold mb-12 text-center lg:text-left">
                 Você já passou <span className="text-gradient-gold">por isso?</span>
               </h2>
             </RevealSection>

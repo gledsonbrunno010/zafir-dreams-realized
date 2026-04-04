@@ -23,7 +23,7 @@ const HowItWorks = () => {
     <section id="como-funciona" className="section-padding" style={{ backgroundColor: "#0D0D0D" }}>
       <div className="container">
         <RevealSection className="text-center mb-20">
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="font-display text-[40px] md:text-4xl lg:text-5xl font-bold mb-4">
             Simples assim.
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -34,7 +34,7 @@ const HowItWorks = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, i) => (
             <RevealSection key={step.number} delay={i * 0.2}>
-              <div className="glass-card p-10 h-full">
+              <div className="glass-card glass-card-yellow-border p-10 h-full">
                 <span className="font-numbers text-6xl text-gradient-gold block mb-6">
                   {step.number}
                 </span>
