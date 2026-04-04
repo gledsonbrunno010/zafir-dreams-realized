@@ -23,7 +23,7 @@ const SLIDES = [
     headlineGold: '"Nunca Mais"'
   },
   {
-    bg: "/bg-hero-4.png",
+    bg: "/bg-hero-4-new.png",
     position: "center center",
     headline1: "No Agro, um maquinário de qualidade faz",
     headlineGold: "Toda a Diferença"
