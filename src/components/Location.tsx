@@ -6,7 +6,7 @@ const Location = () => {
     <section id="localizacao" className="section-padding bg-background">
       <div className="container">
         <RevealSection className="text-center mb-16">
-          <h2 className="font-display text-[40px] md:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="font-display text-[40px] md:text-4xl lg:text-5xl font-bold leading-[1.05] md:leading-tight mb-4">
             Venha nos <span className="text-gradient-gold">visitar</span>
           </h2>
           <p className="text-muted-foreground text-lg">ou fale de onde estiver.</p>

@@ -36,7 +36,7 @@ const ProductCards = () => {
     <section id="bens" className="section-padding bg-background">
       <div className="container">
         <RevealSection className="text-center mb-20">
-          <h2 className="font-display text-[40px] md:text-4xl lg:text-5xl font-bold">
+          <h2 className="font-display text-[40px] md:text-4xl lg:text-5xl font-bold leading-[1.05] md:leading-tight">
             O que você quer <span className="text-gradient-gold">conquistar?</span>
           </h2>
         </RevealSection>

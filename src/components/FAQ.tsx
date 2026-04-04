@@ -52,7 +52,7 @@ const FAQ = () => {
     <section id="faq" className="section-padding bg-background">
       <div className="container max-w-3xl">
         <RevealSection className="text-center mb-16">
-          <h2 className="font-display text-[40px] md:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="font-display text-[40px] md:text-4xl lg:text-5xl font-bold leading-[1.05] md:leading-tight mb-4">
             Ainda tem <span className="text-gradient-gold">dúvidas?</span>
           </h2>
           <p className="text-muted-foreground text-lg">A gente respeita isso.</p>

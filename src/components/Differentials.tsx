@@ -39,7 +39,7 @@ const Differentials = () => {
     <section id="diferenciais" className="section-padding noise-overlay" style={{ backgroundColor: "#070707" }}>
       <div className="container relative z-10">
         <RevealSection className="text-center mb-20">
-          <h2 className="font-display text-[40px] md:text-4xl lg:text-5xl font-bold">
+          <h2 className="font-display text-[40px] md:text-4xl lg:text-5xl font-bold leading-[1.05] md:leading-tight">
             Por que a Zafir Invest é <span className="text-gradient-gold">diferente</span>
             <br />
             de tudo que você já viu?
