@@ -8,31 +8,36 @@ const SLIDES = [
     bg: "/bg-hero-1.png",
     position: "center center",
     headline1: "Você não quer um financiamento.",
-    headlineGold: "Você quer a conquista."
+    headlineGold: "Você quer a conquista.",
+    noBreak: false
   },
   {
     bg: "/bg-hero-2.png",
     position: "center 70%",
     headline1: "Você merece essa grande",
-    headlineGold: "Conquista"
+    headlineGold: "Conquista",
+    noBreak: true
   },
   {
     bg: "/bg-hero-3.png",
     position: "center 80%",
     headline1: "Trabalhar em um caminhão que não é seu",
-    headlineGold: '"Nunca Mais"'
+    headlineGold: '"Nunca Mais"',
+    noBreak: false
   },
   {
     bg: "/bg-hero-4-cropped.png",
     position: "center center",
     headline1: "No Agro, um maquinário de qualidade faz",
-    headlineGold: "Toda a Diferença"
+    headlineGold: "Toda a Diferença",
+    noBreak: false
   },
   {
     bg: "/bg-hero-5.png",
     position: "center 30%",
     headline1: "Invista no Brasil, mesmo morando em outros países,",
-    headlineGold: "Conquiste sua Liberdade"
+    headlineGold: "Conquiste sua Liberdade",
+    noBreak: false
   }
 ];
 
@@ -119,14 +124,15 @@ const HeroSection = () => {
               direction="bottom" 
               className="text-foreground"
             />
-            <br />
+            {!SLIDES[currentBg].noBreak && <br />}
+            {SLIDES[currentBg].noBreak && " "}
             <BlurText 
               key={`b2-${currentBg}`}
               text={SLIDES[currentBg].headlineGold}
               delay={35}
               animateBy="words"
               direction="bottom" 
-              className="block"
+              className={SLIDES[currentBg].noBreak ? "inline" : "block"}
               segmentClassName="text-gradient-gold"
             />
           </h1>
