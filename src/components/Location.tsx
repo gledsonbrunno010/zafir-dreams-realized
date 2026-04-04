@@ -20,21 +20,21 @@ const Location = () => {
                 <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-body font-medium text-foreground mb-1">Endereço</p>
-                  <p className="text-muted-foreground text-sm">[Insira seu endereço aqui]</p>
+                  <p className="text-muted-foreground text-sm">St. M Norte QNM 34 Área especial 01 - Taguatinga, Brasília - DF, 72145-450<br/>Torre Comercial - Andar 24 • Sala 2405</p>
                 </div>
               </div>
               <div className="flex items-start gap-4 justify-center lg:justify-start">
                 <Phone className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-body font-medium text-foreground mb-1">WhatsApp</p>
-                  <p className="text-muted-foreground text-sm">[Insira seu número aqui]</p>
+                  <p className="text-muted-foreground text-sm">+55 61 98229-3664</p>
                 </div>
               </div>
               <div className="flex items-start gap-4 justify-center lg:justify-start">
                 <Mail className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-body font-medium text-foreground mb-1">E-mail</p>
-                  <p className="text-muted-foreground text-sm">[Insira seu e-mail aqui]</p>
+                  <p className="text-muted-foreground text-sm">contato@zafirinvest.com.br</p>
                 </div>
               </div>
               <div className="flex items-start gap-4 justify-center lg:justify-start">
@@ -49,7 +49,7 @@ const Location = () => {
 
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <a
-                  href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20soluções%20da%20Zafir%20Invest"
+                  href="https://wa.me/5561982293664?text=Olá.%20Gostaria%20de%20mais%20informações%20sobre%20o%20trabalho%20da%20Zafir%20Invest"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 border border-primary/30 text-foreground text-sm font-medium hover:bg-primary/10 transition-colors"
@@ -59,7 +59,7 @@ const Location = () => {
                   WHATSAPP
                 </a>
                 <a
-                  href="https://instagram.com/"
+                  href="https://instagram.com/zafir_invest"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 border border-primary/30 text-foreground text-sm font-medium hover:bg-primary/10 transition-colors"
@@ -69,7 +69,7 @@ const Location = () => {
                   INSTAGRAM
                 </a>
                 <a
-                  href="mailto:contato@zafirinvest.com"
+                  href="mailto:contato@zafirinvest.com.br"
                   className="inline-flex items-center gap-2 px-6 py-3 border border-primary/30 text-primary text-sm font-medium hover:bg-primary/10 transition-colors"
                 >
                   <Mail className="w-4 h-4" />

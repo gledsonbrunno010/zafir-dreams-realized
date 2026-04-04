@@ -64,7 +64,7 @@ const HeroSection = () => {
             key={slide.bg}
             src={slide.bg}
             alt=""
-            className="absolute inset-0 w-full h-[100%] lg:h-[120%] object-cover transition-opacity duration-[1500ms] ease-in-out"
+            className="absolute inset-0 w-full h-[100%] lg:h-[120%] object-cover transition-opacity duration-[1500ms] ease-in-out brightness-110"
             style={{ 
               opacity: currentBg === index ? 1 : 0,
               objectPosition: slide.position
@@ -161,7 +161,7 @@ const HeroSection = () => {
             <a href="#contato" className="btn-primary text-center">
               QUERO CONQUISTAR MEU BEM
             </a>
-            <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20soluções%20da%20Zafir%20Invest" target="_blank" rel="noopener noreferrer" className="btn-secondary text-center">
+            <a href="https://wa.me/5561982293664?text=Olá.%20Gostaria%20de%20mais%20informações%20sobre%20o%20trabalho%20da%20Zafir%20Invest" target="_blank" rel="noopener noreferrer" className="btn-secondary text-center">
               FALAR COM UM ESPECIALISTA
             </a>
           </div>

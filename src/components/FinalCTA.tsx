@@ -39,7 +39,7 @@ const FinalCTA = () => {
 
           <RevealSection delay={0.4}>
             <a
-              href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20soluções%20da%20Zafir%20Invest"
+              href="https://wa.me/5561982293664?text=Olá.%20Gostaria%20de%20mais%20informações%20sobre%20o%20trabalho%20da%20Zafir%20Invest"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary inline-block text-base py-5 px-12"
