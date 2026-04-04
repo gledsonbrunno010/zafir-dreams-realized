@@ -25,7 +25,7 @@ const SLIDES = [
   {
     bg: "/bg-hero-4.png",
     position: "center center",
-    headline1: "No Agro, um material de qualidade faz",
+    headline1: "No Agro, um maquinário de qualidade faz",
     headlineGold: "Toda a Diferença"
   },
   {
