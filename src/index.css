@@ -129,13 +129,21 @@
     color: hsl(0 0% 4%);
     font-family: var(--font-cinzel);
     font-weight: 600;
-    letter-spacing: 0.15em;
-    font-size: 0.875rem;
-    padding: 1rem 2.5rem;
+    letter-spacing: 0.10em;
+    font-size: 0.75rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 2px;
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
+  }
+
+  @media (min-width: 768px) {
+    .btn-primary {
+      padding: 1rem 2.5rem;
+      font-size: 0.875rem;
+      letter-spacing: 0.15em;
+    }
   }
 
   .btn-primary::after {
@@ -162,12 +170,20 @@
     color: hsl(45 90% 55%);
     font-family: var(--font-cinzel);
     font-weight: 600;
-    letter-spacing: 0.15em;
-    font-size: 0.875rem;
-    padding: 1rem 2.5rem;
+    letter-spacing: 0.10em;
+    font-size: 0.75rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 2px;
     background: transparent;
     transition: all 0.3s ease;
+  }
+
+  @media (min-width: 768px) {
+    .btn-secondary {
+      padding: 1rem 2.5rem;
+      font-size: 0.875rem;
+      letter-spacing: 0.15em;
+    }
   }
 
   .btn-secondary:hover {
