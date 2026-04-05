@@ -26,10 +26,11 @@ const painCards = [
 ];
 
 const PainPoints = () => {
+
   return (
     <section className="section-padding bg-background relative overflow-hidden">
       <div className="container">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left: cards */}
           <div>
             <RevealSection>
@@ -77,19 +78,34 @@ const PainPoints = () => {
           </div>
 
           {/* Right: visual element */}
-          <div className="relative hidden lg:flex items-center justify-center">
-            <span className="font-numbers text-[180px] text-foreground/[0.03] leading-none select-none">
-              A SOLUÇÃO
-            </span>
-            <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <div className="w-px h-32 bg-gradient-to-b from-transparent via-primary to-transparent rotate-12 mb-8" />
-              <p className="font-cinzel text-primary text-lg">Isso acaba aqui.</p>
+          <div className="relative hidden lg:flex flex-col items-center justify-start w-full h-full pt-4">
+            <div className="relative w-full max-w-md aspect-[4/5] rounded-xl overflow-hidden mb-12 shadow-gold-sm border border-border/40">
+              <img
+                src="/negotiation.png"
+                alt="Consultoria de sucesso na mesa de negociação"
+                className="w-full h-full object-cover"
+              />
+              {/* Gradient left to right */}
+              <div 
+                className="absolute inset-0 pointer-events-none bg-gradient-to-r from-background via-background/40 to-transparent" 
+              />
+              <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background to-transparent" />
+            </div>
+            
+            <div className="flex flex-col items-center justify-center relative w-full max-w-md">
+              <span className="font-numbers text-[120px] md:text-[160px] text-foreground/[0.03] leading-none select-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap">
+                A SOLUÇÃO
+              </span>
+              <div className="relative z-10 flex flex-col items-center">
+                <div className="w-px h-20 bg-gradient-to-b from-transparent via-primary to-transparent mb-6" />
+                <p className="font-cinzel text-primary text-xl md:text-2xl font-semibold tracking-widest uppercase">Isso acaba aqui.</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <RevealSection delay={0.3} className="mt-16 text-center lg:text-left">
-          <div className="gold-line w-full max-w-xs mx-auto lg:mx-0 mb-8" />
+        <RevealSection delay={0.3} className="-mt-8 lg:-mt-24 relative z-10 text-center lg:text-left">
+          <div className="gold-line w-full max-w-xs mx-auto lg:mx-0 mb-3" />
           <p className="text-lg text-muted-foreground max-w-2xl">
             A Zafir Invest não é mais um produto financeiro.
             <br />
