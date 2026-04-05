@@ -40,75 +40,38 @@ const PainPoints = () => {
 
             <div className="space-y-6">
               {painCards.map((card, i) => (
-                <div key={i}>
-                  {/* ========== DESKTOP & TABLET (Staggered Animation) ========== */}
-                  <RevealSection delay={i * 4.5} className="hidden md:block">
-                    <div className="border-l-2 border-primary/60 pl-6 py-4 text-center lg:text-left">
-                      <div className="flex items-center gap-3 mb-3">
-                        <card.icon className="w-5 h-5 text-primary flex-shrink-0" />
-                        <div className="font-body font-medium text-foreground italic">
-                          "<TextType 
-                            text={card.quote}
-                            typingSpeed={60}
-                            initialDelay={i * 4500}
-                            loop={false}
-                            showCursor={true}
-                            hideCursorWhileTyping={false}
-                            hideCursorOnComplete={true}
-                            cursorBlinkDuration={0.8}
-                            startOnVisible={true}
-                          />"
-                        </div>
-                      </div>
-                      <div className="text-muted-foreground text-sm leading-relaxed min-h-[80px]">
-                        <TextType 
-                          text={card.text}
-                          typingSpeed={30}
-                          initialDelay={(i * 4500) + 1200}
+                <RevealSection key={i} delay={i * 4.5}>
+                  <div className="border-l-2 border-primary/60 pl-6 py-4 text-center lg:text-left">
+                    <div className="flex items-center gap-3 mb-3">
+                      <card.icon className="w-5 h-5 text-primary flex-shrink-0" />
+                      <div className="font-body font-medium text-foreground italic">
+                        "<TextType 
+                          text={card.quote}
+                          typingSpeed={60}
+                          initialDelay={i * 4500}
                           loop={false}
                           showCursor={true}
+                          hideCursorWhileTyping={false}
                           hideCursorOnComplete={true}
                           cursorBlinkDuration={0.8}
                           startOnVisible={true}
-                        />
+                        />"
                       </div>
                     </div>
-                  </RevealSection>
-
-                  {/* ========== MOBILE ONLY (Triggered On Scroll) ========== */}
-                  <RevealSection delay={0.15} className="block md:hidden">
-                    <div className="border-l-2 border-primary/60 pl-6 py-4 text-left">
-                      <div className="flex items-center gap-3 mb-3">
-                        <card.icon className="w-5 h-5 text-primary flex-shrink-0" />
-                        <div className="font-body font-medium text-foreground italic">
-                          "<TextType 
-                            text={card.quote}
-                            typingSpeed={60}
-                            initialDelay={0}
-                            loop={false}
-                            showCursor={true}
-                            hideCursorWhileTyping={false}
-                            hideCursorOnComplete={true}
-                            cursorBlinkDuration={0.8}
-                            startOnVisible={true}
-                          />"
-                        </div>
-                      </div>
-                      <div className="text-muted-foreground text-sm leading-relaxed min-h-[100px]">
-                        <TextType 
-                          text={card.text}
-                          typingSpeed={30}
-                          initialDelay={1200}
-                          loop={false}
-                          showCursor={true}
-                          hideCursorOnComplete={true}
-                          cursorBlinkDuration={0.8}
-                          startOnVisible={true}
-                        />
-                      </div>
+                    <div className="text-muted-foreground text-sm leading-relaxed min-h-[80px] md:min-h-0">
+                      <TextType 
+                        text={card.text}
+                        typingSpeed={30}
+                        initialDelay={(i * 4500) + 1200}
+                        loop={false}
+                        showCursor={true}
+                        hideCursorOnComplete={true}
+                        cursorBlinkDuration={0.8}
+                        startOnVisible={true}
+                      />
                     </div>
-                  </RevealSection>
-                </div>
+                  </div>
+                </RevealSection>
               ))}
             </div>
           </div>
