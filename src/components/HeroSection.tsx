@@ -19,18 +19,20 @@ const SLIDES = [
     noBreak: true
   },
   {
-    bg: "/bg-hero-3.png",
-    position: "center 80%",
+    video: "/caminhao-video.mp4",
+    position: "center center",
     headline1: "Trabalhar em um caminhão que não é seu",
     headlineGold: '"Nunca Mais"',
-    noBreak: false
+    noBreak: false,
+    forceHeight: "100%"
   },
   {
-    bg: "/bg-hero-4-cropped.png",
+    video: "/trator-video.mp4",
     position: "center center",
     headline1: "No Agro, um maquinário de qualidade faz",
     headlineGold: "Toda a Diferença",
-    noBreak: false
+    noBreak: false,
+    forceHeight: "100%"
   },
   {
     bg: "/bg-hero-5.png",
@@ -49,10 +51,10 @@ const HeroSection = () => {
   useEffect(() => {
     setLoaded(true);
     
-    // Transição "combinar" a cada 6 segundos
+    // Transição "combinar" a cada 5 segundos
     const interval = setInterval(() => {
       setCurrentBg((prev) => (prev + 1) % SLIDES.length);
-    }, 6000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -65,20 +67,38 @@ const HeroSection = () => {
         style={{ transform: `translateY(${parallaxOffset}px)` }}
       >
         {SLIDES.map((slide, index) => (
-          <img
-            key={slide.bg}
-            src={slide.bg}
-            alt=""
-            className="absolute inset-0 w-full h-[100%] lg:h-[120%] object-cover transition-opacity duration-[1500ms] ease-in-out brightness-110"
-            style={{ 
-              opacity: currentBg === index ? 1 : 0,
-              objectPosition: slide.position
-            }}
-          />
+          slide.video ? (
+            <video
+              key={slide.video}
+              src={slide.video}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="absolute inset-0 w-full h-[100%] lg:h-[120%] object-cover transition-opacity duration-[1500ms] ease-in-out brightness-[1.15] contrast-[1.05]"
+              style={{ 
+                opacity: currentBg === index ? 1 : 0,
+                objectPosition: slide.position,
+                height: slide.forceHeight ? slide.forceHeight : undefined
+              }}
+            />
+          ) : (
+            <img
+              key={slide.bg}
+              src={slide.bg}
+              alt=""
+              className="absolute inset-0 w-full h-[100%] lg:h-[120%] object-cover transition-opacity duration-[1500ms] ease-in-out brightness-[1.15] contrast-[1.05]"
+              style={{ 
+                opacity: currentBg === index ? 1 : 0,
+                objectPosition: slide.position,
+                height: slide.forceHeight ? slide.forceHeight : undefined
+              }}
+            />
+          )
         ))}
         {/* Gradiente Escuro de Transição - Esquerda para a Direita / Baixo para Cima */}
         <div className="absolute inset-0 z-10 bg-gradient-to-t lg:bg-gradient-to-r from-background via-background/80 lg:via-background/50 to-transparent lg:to-transparent" />
-        <div className="absolute inset-0 z-10 bg-black/20" /> {/* Escurecimento leve geral para contraste em partes claras das imagens */}
+        <div className="absolute inset-0 z-10 bg-black/10" /> {/* Escurecimento leve geral para contraste em partes claras das imagens */}
       </div>
 
       <div className="container relative z-20 pt-24 lg:pt-32 pb-20">
@@ -108,7 +128,7 @@ const HeroSection = () => {
 
           {/* Main title */}
           <h1
-            className="font-display text-[50px] md:text-[56px] lg:text-[88px] xl:text-[100px] font-bold md:font-extrabold leading-[0.95] tracking-tight mb-8"
+            className="font-display text-[42px] sm:text-[50px] md:text-[56px] lg:text-[88px] xl:text-[100px] font-bold md:font-extrabold leading-[1] md:leading-[0.95] tracking-tight mb-8"
             style={{
               opacity: loaded ? 1 : 0,
               transform: loaded ? "translateY(0)" : "translateY(30px)",

@@ -4,14 +4,13 @@ const FinalCTA = () => {
   return (
     <section id="contato" className="relative min-h-[80vh] flex items-center overflow-hidden">
       {/* BG */}
-      <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1920"
-          alt=""
-          className="w-full h-full object-cover"
-          loading="lazy"
-        />
-        <div className="absolute inset-0" style={{ backgroundColor: "rgba(10,10,10,0.80)" }} />
+      <div className="absolute inset-0 flex flex-col md:flex-row">
+        <img src="/carro-ram-frente.png" alt="" className="flex-1 w-full md:w-1/3 h-full object-cover object-center grayscale-[20%]" loading="lazy" />
+        <img src="/byd-seal.png" alt="" className="flex-1 w-full md:w-1/3 h-full object-cover object-center grayscale-[20%]" loading="lazy" />
+        <img src="/novo-caminhao-volvo.jpg" alt="" className="flex-1 w-full md:w-1/3 h-full object-cover object-center grayscale-[20%]" loading="lazy" />
+        
+        {/* Degradê que é mais transparente no topo (para mostrar os carros) e escuro no centro/base (onde fica o texto) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-background/85 to-background" />
       </div>
 
       <div className="container relative z-10 py-32">

@@ -15,7 +15,6 @@ const productLinks = [
   { label: "Carros", href: "/carros" },
   { label: "Caminhões", href: "/caminhoes" },
   { label: "Tratores", href: "/tratores" },
-  { label: "Colheitadeiras", href: "/colheitadeiras" },
 ];
 
 const Header = () => {
@@ -38,7 +37,7 @@ const Header = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-24 md:h-28">
-        <a href="#inicio" className="flex items-center gap-1.5">
+        <a href="/" className="flex items-center gap-1.5">
           <img src={logo} alt="Zafir Invest" className="h-20 w-20 md:h-24 md:w-24 object-contain" />
           <span className="font-cinzel text-primary text-sm md:text-base tracking-[0.10em] whitespace-nowrap">
             ZAFIR INVEST
