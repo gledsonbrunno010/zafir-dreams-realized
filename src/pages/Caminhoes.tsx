@@ -156,8 +156,8 @@ const Caminhoes = () => {
                 </p>
               </div>
               
-              <a href="https://wa.me/5561982293664?text=Olá.%20Gostaria%20de%20simular%20ou%20saber%20mais%20sobre%20as%20soluções%20para%20Caminhões%20com%20a%20Zafir%20Invest" target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 text-base tracking-wide">
-                FALE COM OTIME DE LOGÍSTICA
+              <a href="https://wa.me/5561982293664?text=Olá.%20Gostaria%20de%20simular%20ou%20saber%20mais%20sobre%20as%20soluções%20para%20Caminhões%20com%20a%20Zafir%20Invest" target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center justify-center w-full px-8 py-4 text-base tracking-wide">
+                FALE COM O TIME DE LOGÍSTICA
               </a>
             </div>
             

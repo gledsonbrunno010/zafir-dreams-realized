@@ -104,7 +104,7 @@ const PainPoints = () => {
           </div>
         </div>
 
-        <RevealSection delay={0.3} className="-mt-8 lg:-mt-24 relative z-10 text-center lg:text-left">
+        <RevealSection delay={0.3} className="mt-8 lg:-mt-24 relative z-10 text-center lg:text-left">
           <div className="gold-line w-full max-w-xs mx-auto lg:mx-0 mb-3" />
           <p className="text-lg text-muted-foreground max-w-2xl">
             A Zafir Invest não é mais um produto financeiro.
