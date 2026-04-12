@@ -114,28 +114,28 @@ const Caminhoes = () => {
             <div className="space-y-6 animate-fade-in" style={{ animationDelay: '300ms' }}>
               <h3 className="text-2xl font-cinzel text-primary tracking-wide">Vantagens Competitivas</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-colors group">
+                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-primary transition-colors group">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                     <Truck className="w-6 h-6" />
                   </div>
                   <h4 className="font-cinzel text-foreground">Flexibilidade Absoluta</h4>
                   <p className="text-sm text-foreground/60 font-body">Condições para veículos e implementos simultaneamente, novos ou seminovos.</p>
                 </div>
-                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-colors group">
+                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-primary transition-colors group">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                     <CheckCircle2 className="w-6 h-6" />
                   </div>
                   <h4 className="font-cinzel text-foreground">Saúde do Fluxo de Caixa</h4>
                   <p className="text-sm text-foreground/60 font-body">Parcelas e montantes alinhados com o rendimento real da estrada.</p>
                 </div>
-                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-colors group">
+                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-primary transition-colors group">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                     <Headset className="w-6 h-6" />
                   </div>
                   <h4 className="font-cinzel text-foreground">Rede de Parcerias</h4>
                   <p className="text-sm text-foreground/60 font-body">Apoio contínuo e conexão com grandes concessionárias ao redor do país.</p>
                 </div>
-                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-colors group">
+                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-primary transition-colors group">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                     <ShieldCheck className="w-6 h-6" />
                   </div>

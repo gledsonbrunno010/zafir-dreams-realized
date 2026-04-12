@@ -101,28 +101,28 @@ const Carros = () => {
             <div className="space-y-6 animate-fade-in" style={{ animationDelay: '300ms' }}>
               <h3 className="text-2xl font-cinzel text-primary tracking-wide">Proposta de valor</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-colors group">
+                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-primary transition-colors group">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                     <Car className="w-6 h-6" />
                   </div>
                   <h4 className="font-cinzel text-foreground">Liberdade de Marca</h4>
                   <p className="text-sm text-foreground/60 font-body">Use o crédito para qualquer montadora, marca ou modelo de veículo automotor.</p>
                 </div>
-                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-colors group">
+                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-primary transition-colors group">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                     <CheckCircle2 className="w-6 h-6" />
                   </div>
                   <h4 className="font-cinzel text-foreground">Sem Restrição de Ano</h4>
                   <p className="text-sm text-foreground/60 font-body">Condições favoráveis tanto para modelos zeros quanto seminovos selecionados.</p>
                 </div>
-                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-colors group">
+                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-primary transition-colors group">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                     <Headset className="w-6 h-6" />
                   </div>
                   <h4 className="font-cinzel text-foreground">Agilidade na Aprovação</h4>
                   <p className="text-sm text-foreground/60 font-body">Comunicação e esteira de aprovação rápida pra você acelerar seu projeto.</p>
                 </div>
-                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-colors group">
+                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-primary transition-colors group">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                     <ShieldCheck className="w-6 h-6" />
                   </div>

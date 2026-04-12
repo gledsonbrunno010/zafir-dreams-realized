@@ -96,28 +96,28 @@ const Tratores = () => {
             <div className="space-y-6 animate-fade-in" style={{ animationDelay: '300ms' }}>
               <h3 className="text-2xl font-cinzel text-primary tracking-wide">Diferenciais do Agro</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-colors group">
+                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-primary transition-colors group">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                     <Tractor className="w-6 h-6" />
                   </div>
                   <h4 className="font-cinzel text-foreground">Linhas Especializadas</h4>
                   <p className="text-sm text-foreground/60 font-body">Crédito compreensivo aos meses de receita sazonal dos produtores.</p>
                 </div>
-                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-colors group">
+                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-primary transition-colors group">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                     <CheckCircle2 className="w-6 h-6" />
                   </div>
                   <h4 className="font-cinzel text-foreground">Suporte Técnico</h4>
                   <p className="text-sm text-foreground/60 font-body">Analistas preparados para tratar de implementos e detalhes cruciais.</p>
                 </div>
-                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-colors group">
+                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-primary transition-colors group">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                     <Headset className="w-6 h-6" />
                   </div>
                   <h4 className="font-cinzel text-foreground">Comunicação Direta</h4>
                   <p className="text-sm text-foreground/60 font-body">Atendimento rápido por WhatsApp garantindo sua conveniência on e off-line.</p>
                 </div>
-                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-colors group">
+                <div className="flex flex-col items-start gap-3 p-6 rounded-xl bg-background border border-primary transition-colors group">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                     <ShieldCheck className="w-6 h-6" />
                   </div>
